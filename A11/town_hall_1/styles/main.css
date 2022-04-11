@@ -24,6 +24,8 @@ header{
 }
 header img{
 	float: left;
+	margin-left: 2em;
+	margin-right: 2em;
 }
 
 /* the styles for the section */
