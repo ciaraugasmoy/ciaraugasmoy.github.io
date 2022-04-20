@@ -1,6 +1,6 @@
 h1{
     font-family: "Times New Roman";
+    border:red dotted 2px;
     margin:50px;
-    padding10px;
-    border: 5px solid red;
+    padding:50px;
 }
