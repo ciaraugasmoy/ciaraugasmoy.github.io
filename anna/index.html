@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+
+</head>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial,Garamond, serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background-image: url('https://post.healthline.com/wp-content/uploads/2020/09/healthy-eating-ingredients-732x549-thumbnail.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 40%;
+   opacity: 0.9;
+  color: white;
+  text-shadow: -1.5px 0 gray, 0 1.5px gray, 1.5px 0 black, 0 -1.5px gray;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 80px;
+ 
+
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Change color on hover */
+p:hover {
+  background-color: #ddd;
+  color: black;
+  text-align: center;
+}
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+
+
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Home Recipes</h1>
+  <p1>Cook what you have.</p1>
+</div>
+
+<div class="navbar">
+  <a href="#">Home</a>
+  <a href="#">Recipes</a>
+  <a href="#">Favorites</a>
+  <a href="#">Contact</a>
+  <input type="text" placeholder="Search..">
+  <a href="#" class="right">Account</a>
+  
+</div>
+<div class="row">
+  <div class="side">
+    <h2>Recipe of the Week</h2>
+    <h5>Coconut Curry:</h5>
+    <img src="https://hips.hearstapps.com/hmg-prod/images/190509-coconut-chicken-curry-157-1558039780.jpg" alt="Coconut Curry" width="355" height="250">
+
+    <p>A twist on curry chicken, this most liked dish coconut curry has been nominated as dish of the week..</p> 
+    <h3>Manageable Recipes</h3>
+    
+    <img src="https://colonydiner.com/wp-content/uploads/2021/03/French.jpg" alt="Flowers in Chania" width="300" height="250">
+    <p>Berry French Toast</p>
+   <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/190322-ham-sandwich-horizontal-1553721016.png" alt="Sandwhich" width="300" height="250">
+   <p>Ham Sandwhich</p>
+    <img src="https://i2.wp.com/www.downshiftology.com/wp-content/uploads/2021/02/Breakfast-Tacos-main-1-1.jpg" width="300" height="250">
+    <p>Breakfast Taco</p>
+    
+  </div>
+ 
+  <div class="main">
+  <h1>Choose Your Diet</h1>
+  <form action="/action_page.php">
+  <input type="checkbox" id="Diet1" name="Diet1" value="Keto">
+  <label for="Diet1"> Keto</label><br>
+  <input type="checkbox" id="Diet2" name="Diet2" value="No meat">
+  <label for="Diet2"> Vegan</label><br>
+  <input type="checkbox" id="Diet3" name="Diet3" value="No meat and fish">
+  <label for="Diet3"> Vegetarian</label><br>
+  <input type="checkbox" id="Diet4" name="Diet4" value="No gluton">
+  <label for="Diet4"> Gluton Free</label><br>
+  <input type="checkbox" id="Diet5" name="Diet5" value="No restrictions">
+  <label for="Diet5"> No Restrictions</label><br><br>
+  <input type="submit" value="Submit">
+</form>
+    <h2>5 Items That You Need in Your Pantry</h2>
+    <h5>Article published, Dec 7, 2021</h5>
+    <img src="https://www.housedigest.com/img/gallery/3-clever-ideas-for-building-a-pantry-for-extra-kitchen-storage/intro-1659248401.jpg" alt="Pantry" width="900" height="250">
+   
+    <p>If you find yourself constantly making grocery trips for new ingredients to complete a recipe, let us help you save some gas.These 10 items will help you save time and money! No need to run to the store with...</p>
+    <br>
+    <h2>Breakfast Recipes That Take 10 Minutes or Less</h2>
+    <h5>Article published, Sep 2, 2021</h5>
+     <img src="https://www.tastingtable.com/img/gallery/breakfast-recipes/l-intro-1651937325.jpg" alt="Breakfast" width="900" height="250">
+    
+    <p>If you could spare 10 minutes to get your day started right, why not? Whether its because you're in a hurry or just want to take some time off, breakfast in about 10 minutes helps..
+  </div>
+
+</div>
+
+<div class="footer">
+<p>Visit our Contact Page for any questions<p>
+  <h2>Happy Cooking!<h2>
+   
+</div>
+
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
