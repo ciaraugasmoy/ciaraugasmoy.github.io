@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> Ciara Ugas-Moy week4</title>
+</head>
+
+
+    <body>
+        <div class="container">
+            <form action="" onsubmit="return errormsg()">
+                <div class="field">
+                    <label for="ucid">UCID:</label>
+                    <input type="text" id="ucid_input" name="ucid" placeholder="Enter UCID" title="A UCID is a sequence of letters followed by zero to three digits" />
+                </div>
+                <br/>
+                <div class="field">
+                    <button type="submit" class="full">Submit</button>
+                </div>
+            </form>
+        </div>
+
+<script>
+            function errormsg() {
+                var result = true;
+                var conditions = /^[a-z]+$|^[a-z]+\d{1}$|^[a-z]+\d{2}$|^[a-z]+\d{3}$/;
+                var id_input = document.getElementById("ucid_input").value;
+
+                valid_ucid = ["ccu3", "ca12", "ca1", "cia33", "c3"];
+
+                if (id_input.search(conditions) == -1) {
+                    alert("UCID is not in valid format");
+                    result = false;
+                }
+                else if (id_input.search(conditions) !== -1) {
+                    if (valid_ucid.indexOf(id_input) !== -1) {
+                        alert("Valid format AND Valid UCID");
+                        result = true;
+                    }
+                    else {
+                        alert("Format is valid but UCID is invalid");
+                        result = true;
+                    }
+                }
+                return result;
+            }
+</script>
+</body>
+</html>
