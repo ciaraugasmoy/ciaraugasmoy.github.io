@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@800&display=swap');
+
+:root {
+    --form-text-color: rgb(36, 82, 36);
+    --color-input: rgba(218, 159, 57, 0.393);
+  }
+
+  body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url(puppybg2.JPG);
+    background-size: cover;
+  }
+  
+h1{
+    color: var(--form-text-color);
+    text-align: center;
+    font-family: 'Cinzel', serif;
+}
+
+
+.myform{
+    border-radius: 50px;
+    margin: 1% 5%;
+    padding: 5%;
+    background-color: rgba(255, 255, 255, 0.543);
+}
+
+input, select{
+    margin: 5px 0px;
+    border: 2px solid var(--form-text-color);
+    border-radius: 4px;
+    color:var(--form-text-color);
+    background-color: rgba(183, 183, 183, 0.514);
+    box-shadow: 0px 3px 5px var(--form-text-color);
+    padding: 10px 10px;
+  }
+  
+  
+  input[type=range]{
+      padding:10px 10px;
+  }
+  input:focus{
+        background-color: var(--color-input);
+        color:var(--form-text-color);
+  }
+  
+  
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--form-text-color);
+    opacity: 1; /* Firefox */
+  }
+  
+  ::-moz-selection { /* Code for Firefox */
+    color: var(--form-text-color);
+    background:  var(--color-input);
+  }
+  
+  ::selection {
+    color: var(--form-text-color);
+    background:  var(--color-input);
+  }
+  
