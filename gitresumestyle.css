@@ -2,12 +2,15 @@
 :root {
     /*colors*/
     --color-bg-main-1: rgb(255, 255, 255);
+    --color-main-text-1:black;
     --color-button-1:black;
-    --color-text-1:white;
+    --color-button-text-1:white;
     --color-border-1:purple;
     --drop-shadow-1:5px 5px 7px 1px rgba(93, 129, 109,0.5);
+    --drop-shadow-gallery: 2px 2px 1px 1px rgba(0,0,0,0.5); 
 
-    --color-bg-main-2: rgb(47, 45, 45);
+    --color-bg-main-2: rgb(59, 3, 27);
+    --color-main-text-2:white;
     --color-button-2:white;
     --color-text-2:black;
     --color-border-2:purple;
@@ -61,19 +64,18 @@ section{
     display: inline-block;
     margin-right: 10px;
     margin-bottom: 10px;
-
 }
 .button-menu a{ 
     text-decoration: none;
-    color: var(--color-text-1);  
+    color: var(--color-button-text-1);  
     padding: 20px 30px;
     background-color: var(--color-button-1);
-    border: 1px solid var(--color-text-1);
+    border: 1px solid var(--color-button-text-1);
     transition: 0.2s;
 }
 .button-menu a:hover{
     border: 1px solid var(--color-text-2);
-    background-color: var(--color-button-2);
+    background-color: rgba(255, 255, 255, 0);
     color: var(--color-text-2);
 }
 /*ensures proper alignment and clickable area*/
@@ -99,4 +101,36 @@ section{
     display: block;
     margin: auto;
     max-width: 200px;
+}
+.techstack{
+    display: flex;
+    width: 100%;
+    padding: 2px;
+    justify-content: flex-end;
+}
+.techstack p{
+    display: inline-flex;
+    margin: 2px;
+    padding: 2px;
+    font-family: var(--font-normal);
+    background-color: var(--color-bg-main-2);
+    color: var(--color-main-text-2);
+}
+
+
+.projects .gallery{
+    margin:10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:left;
+    background-color: rgb(164, 164, 164);
+    padding: 10px;
+    border-radius: 10px;
+}
+.gallery img{
+    margin: 10px;
+    object-fit:fill;
+    min-width: 100px;
+    max-height: 50vh;
+    box-shadow: var(--drop-shadow-gallery);
 }
