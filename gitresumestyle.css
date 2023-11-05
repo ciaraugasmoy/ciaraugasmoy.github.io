@@ -1,7 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Grandiflora+One&family=Handlee&family=Patrick+Hand+SC&family=Permanent+Marker&family=Zilla+Slab+Highlight:wght@400;700&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+:root {
+    /*colors*/
+    --color-bg-main-1: rgb(255, 255, 255);
+    --color-button-1:black;
+    --color-text-1:white;
+    --color-border-1:purple;
+    --drop-shadow-1:5px 5px 7px 1px rgba(0,158,154,0.5);
+
+    --color-bg-main-2: rgb(47, 45, 45);
+    --color-button-2:white;
+    --color-text-2:black;
+    --color-border-2:purple;
+
+    /*fonts*/
+    --font-header:'Bubblegum Sans', sans-serif; 
+    --font-normal:'Zilla Slab', serif;
+    --font-handwritten: 'Handlee', cursive;
+    --font-marker: 'Permanent Marker', cursive;
+    --font-no-highlight: 'Zilla Slab', serif;
+    --font-highlight: 'Zilla Slab Highlight', serif;
+  }
+
 *{
     margin:0;
     padding:0;
 }
+body{
+    background-color: var(--color-bg-main-1);
+    font-family:var(--font-handwritten);
+}
+h1{
+    margin-bottom: 20px;
+    font-family: var(--font-header);
+}
+
+section{
+    padding: 40px 5%;
+    display: flex-box;
+}
+
+.button-menu{
+    text-align:center;
+    margin: 35px auto;   
+}
+.button-menu ul{
+    list-style: none;  
+}
+.button-menu li{ 
+    display: inline;
+}
+.button-menu a{ 
+    text-decoration: none;
+    color: var(--color-text-1);
+    background-color: var(--color-button-1);
+    border: 1px solid var(--color-border-1);
+    border-radius: 25px;
+    padding: 20px 30px;
+    margin-right: 20px; 
+}
+
+.resume{
+  background-color: var(--color-bg-main-1);
+}
 .resume img{
-    max-width: 80%;
+    width: 100%;
+    border-radius: 5px;
+    -webkit-box-shadow: var(--drop-shadow-1); 
+    box-shadow: var(--drop-shadow-1);
+}
+.bio h1{
+    text-align: center;
+}
+.bio-image{
+    display: block;
+    margin: auto;
+    max-width: 200px;
 }
