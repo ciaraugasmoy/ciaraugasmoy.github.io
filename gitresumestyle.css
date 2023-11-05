@@ -134,3 +134,8 @@ section{
     max-height: 50vh;
     box-shadow: var(--drop-shadow-gallery);
 }
+.standard-16-9 img{
+    object-fit: cover;
+    aspect-ratio: 16/9;
+    max-width: 500px;
+}
