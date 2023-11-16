@@ -141,10 +141,14 @@ section{
 .techstack p{
     display: inline-flex;
     margin: 2px;
-    padding: 2px;
+    padding: 2px 4px;
     font-family: var(--font-normal);
-    background-color: var(--color-bg-main-2);
+    background-color: rgb(0, 95, 46);
     color: var(--color-main-text-2);
+}
+.techstack p:hover{
+    color: rgb(0, 95, 46);
+    background-color: var(--color-fun);
 }
 
 
