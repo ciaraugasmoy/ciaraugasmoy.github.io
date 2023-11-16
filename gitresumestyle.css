@@ -14,6 +14,7 @@
     --color-text-2:black;
     --color-fun:rgba(130, 150, 0,1);
     --color-fun-2:rgba(130, 150, 0,1);
+    --color-transparent:rgba(0,0,0,0)
 
     /*fonts*/
     --font-header:Montserrat; 
@@ -71,23 +72,18 @@ section{
 .button-menu a{ 
     font-weight: bold;
     text-decoration: none;
-    color: var(--color-button-text-1);  
     padding: 20px 30px;
-    background-color: var(--color-button-1);
-    border: 1px solid var(--color-button-text-1);
     transition: 0.3s;
+    background-color: var(--color-transparent);
+    color: var(--color-fun);
+    border: 1px solid var(--color-text-2);
 }
 .button-menu a:hover{
-    border: 1px solid var(--color-text-2);
-    background-color: rgba(255, 255, 255, 0);
-    background: linear-gradient(var(--color-fun) 0%,rgba(0,0,0,0) 0%);
-    color: var(--color-text-2);
+    mix-blend-mode: multiply;
+    color: white;  
+    background-color: var(--color-fun);
+    border: 1px solid var(--color-fun);
     transition: 0.3s;
-    animation: color-swap 2s forwards;
-}
-@keyframes color-swap {
-    0%{color: var(--color-text-2);}
-    100%{color: var(--color-fun);}
 }
   
 /*ensures proper alignment and clickable area*/
@@ -100,9 +96,6 @@ section{
 .resume{
     max-width: 500px;
     margin: auto;
-}
-.resume{
-  background-color: var(--color-bg-main-1);
 }
 .resume img{
     width: 100%;
@@ -180,3 +173,14 @@ section{
     aspect-ratio: 16/9;
     max-width: 500px;
 }
+
+.dotted {
+    --dot-bg: rgb(250, 250, 250);
+    --dot-color: rgb(155, 155, 155);
+    --dot-size: 1px;
+    --dot-space: 22px;
+      background:
+          linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+          linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+          var(--dot-color);
+  }
