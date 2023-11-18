@@ -1,4 +1,6 @@
-  @import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Handlee&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Permanent+Marker&family=Zilla+Slab+Highlight:wght@400;700&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Fredericka+the+Great&family=Handlee&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Permanent+Marker&family=Syncopate:wght@400;700&family=Zilla+Slab+Highlight:wght@400;700&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 :root {
     /*colors*/
     --color-bg-main-1: rgb(255, 255, 255);
@@ -22,7 +24,7 @@
     --font-standard: Montserrat;
     --font-marker: 'Permanent Marker', cursive;
     --font-no-highlight: 'Zilla Slab', serif;
-    --font-highlight: 'Zilla Slab Highlight', serif;
+    --font-display: 'Syncopate', sans-serif;
   }
 
 *{
@@ -101,7 +103,7 @@ section{
     width: 100%;
     border-radius: 5px;
     -webkit-box-shadow: var(--drop-shadow-1); 
-    box-shadow: var(--drop-shadow-1);
+    box-shadow: 5px 5px 1px 0px rgba(130, 150, 0,0.8);
 }
 .bio h1{
     text-align: center;
@@ -206,14 +208,18 @@ section{
 }
 
 .project-page h1{
-    color: var(--color-fun);
+    color: grey;
 }
 .project-page a{
-    color: var(--color-fun);
+    color: grey;
 }
 h1.title{
+  
     padding-top: 40px;
     text-align: center;
     width: 100%;
+    font-family: var(--font-display);
+    font-weight: 700;
+    text-transform: uppercase;
 }
    
