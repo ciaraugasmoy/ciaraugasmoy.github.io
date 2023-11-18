@@ -17,7 +17,7 @@
     --color-transparent:rgba(0,0,0,0)
 
     /*fonts*/
-    --font-header:Montserrat; 
+    --font-header: Montserrat; 
     --font-normal:'Zilla Slab', serif;
     --font-standard: Montserrat;
     --font-marker: 'Permanent Marker', cursive;
@@ -199,4 +199,21 @@ section{
           linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
           var(--dot-color);
   }
+
+.project-page{
+    border-top: 1px solid black;
+    background-color: rgb(255, 255, 255);
+}
+
+.project-page h1{
+    color: var(--color-fun);
+}
+.project-page a{
+    color: var(--color-fun);
+}
+h1.title{
+    padding-top: 40px;
+    text-align: center;
+    width: 100%;
+}
    
