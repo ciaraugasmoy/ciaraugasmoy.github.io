@@ -7,7 +7,7 @@
     --drop-shadow-gallery: 2px 2px 1px 1px rgba(0, 0, 0, 0.708); 
 
     --color-foreground:rgb(255, 255, 255);
-    --color-fun:rgb(121, 150, 186);
+    --color-fun:rgb(148, 196, 255);
     --color-transparent:rgba(255,255,255,0);
 
     /*fonts*/
@@ -52,10 +52,8 @@ section{
     text-align:center;  
     margin-top: 30px;
 }
-.button-menu ul{
-    list-style: none;  
-}
-.button-menu li{ 
+
+.button-menu a{ 
     display: inline-block;
     margin-right: 10px;
     margin-bottom: 10px;
@@ -204,15 +202,59 @@ h1.title{
     margin: 2px;
     padding: 2px 4px;
     font-family: var(--font-normal);
-    border: 1px solid var(--color-fun);
-    background-color: var(--color-fun);
-    color: white;
-    transition: 0.1s;
-}
-.techstack p:hover{
     border: 1px solid rgb(198, 198, 198);
     color: rgb(198, 198, 198);
     background-color: var(--color-transparent);
     transition: 0.1s;
+}
+.techstack p:hover{
+    transition: 0.1s;
+    border: 1px solid var(--color-fun);
+    background-color: var(--color-fun);
+    color: white;
+}
+
+#uiux{
+    border-top: 2px solid var(--color-fun);
+}
+#uiux h1{
+    color: var(--color-fun);
+    margin-top: 20px;
+}
+.uicard a{
+    display: block;
+    text-decoration: none;
+    margin-bottom: 5px;
+    color: rgb(198, 198, 198); 
+    width: fit-content;
+    transition: 300ms;
+}
+.uicard a:hover{
+    background-color: yellow;
+    border-radius: 5px;
+    color: black;
+    width: fit-content;
+    transition: 300ms;
+}
+.paper{
+    background-color: var(--color-fun);
+    margin: 10px 0;
+    border-radius: 10px;
+    padding: 15px;
+}
+.paper a{
+    color: white;
+}
+.paper h2, .paper p{
+    font-size: 12pt;
+    margin-bottom: 10px;
+}
+::selection{
+    color: black;
+    background-color: var(--color-fun);
+}
+::-moz-selection{
+    color: black;
+    background-color: var(--color-fun);
 }
    
