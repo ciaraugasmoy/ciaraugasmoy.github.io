@@ -43,8 +43,7 @@ h1{
 }
 
 section{
-    padding: 40px 10%;
-    display: flex-box;
+    padding: 10px 10%;
     min-height: 100vh;
 }
 
@@ -130,7 +129,6 @@ h1.title{
     font-weight: 700;
     text-transform: uppercase;
 }
-
 
 .projects .gallery{
     margin:10px auto;
