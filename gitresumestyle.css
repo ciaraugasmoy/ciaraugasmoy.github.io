@@ -221,8 +221,11 @@ h1.title{
 }
 .uicard a{
     display: block;
+    padding-left: 2px;
+    padding-right: 2px;
     text-decoration: none;
     margin-bottom: 5px;
+    border-radius: 5px;
     color: rgb(198, 198, 198); 
     width: fit-content;
     transition: 300ms;
