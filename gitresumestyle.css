@@ -45,6 +45,9 @@ h1{
 section{
     padding: 10px 10%;
 }
+.bio{
+    min-height: 100vh;
+}
 
 .button-menu{
     text-align:center;  
